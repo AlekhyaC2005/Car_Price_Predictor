@@ -9,7 +9,8 @@ from sklearn.metrics import r2_score
 import numpy as np
 
 # Load the cleaned car data
-car = pd.read_csv('Cleaned_car_data.csv')
+url='https://raw.githubusercontent.com/AlekhyaC2005/Car_Price_Predictor/refs/heads/main/Cleaned_Car_data.csv'
+car = pd.read_csv(url)
 
 # Prepare data for training
 X = car[['name', 'company', 'year', 'kms_driven', 'fuel_type']]
